@@ -1,6 +1,6 @@
 var pubnub = PUBNUB({
-    publish_key : '---INSERT KEY HERE---',
-    subscribe_key : '---INSERT KEY HERE---'
+    publish_key : 'pub-c-4b844d24-d357-4c0a-aeaa-b82e30decead',
+    subscribe_key : 'sub-c-56c04294-b696-11e6-b37b-02ee2ddab7fe'
 });
 
 pubnub.subscribe({
