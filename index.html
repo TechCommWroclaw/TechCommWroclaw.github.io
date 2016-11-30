@@ -88,14 +88,14 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
-				autoSlide: 10000,
-				autoSlideStoppable: true,
+				// autoSlide: 10000,
+				// autoSlideStoppable: true,
 				pubnubRemoteControl: {
-        subscribeKey: 'sub-c-55d2c5a8-b648-11e6-a071-02ee2ddab7fe',   // PubNub subscribe key
-        publishKey: 'pub-c-55f205a9-571e-477b-96a0-9c39f5e3e867',       // PubNub publish key
-        inputChannel: 'input',                  // the channel used to receive remote commands
-        outputChannel: 'output',                // the channel used to update presentation status
-				},
+											        subscribeKey: 'sub-c-55d2c5a8-b648-11e6-a071-02ee2ddab7fe',   // PubNub subscribe key
+											        publishKey: 'pub-c-55f205a9-571e-477b-96a0-9c39f5e3e867',       // PubNub publish key
+											        inputChannel: 'input',                  // the channel used to receive remote commands
+											        outputChannel: 'output',                // the channel used to update presentation status
+															},
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
@@ -104,7 +104,7 @@
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'https://cdn.pubnub.com/sdk/javascript/pubnub.4.3.2.min.js', async: true },
-			 		{ src: 'plugin/pubnub-remote-control/pubnub-remote-control.js', async: true },
+			 		{ src: 'plugin/pubnub-remote-control/pubnub-remote-control.js', async: true }
 				]
 			});
 		</script>
